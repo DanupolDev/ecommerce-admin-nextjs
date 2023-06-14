@@ -10,6 +10,7 @@ async function isAdminEmail(email) {
   return !!(await Admin.findOne({ email }));
 }
 export const authOptions = {
+  secret: process.env.SECRET,
   providers: [
     // OAuth authentication providers...
 
