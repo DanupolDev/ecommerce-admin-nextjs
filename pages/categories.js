@@ -144,7 +144,7 @@ function Categories({ swal }) {
           </button>
           {properties.length > 0 &&
             properties.map((property, index) => (
-              <div className="flex gap-1 mb-2">
+              <div className="flex gap-1 mb-2" key={index}>
                 <input
                   type="text"
                   className="mb-0"
